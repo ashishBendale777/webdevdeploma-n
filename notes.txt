@@ -1,0 +1,144 @@
+========================
+HTML QUICK CHEAT SHEET
+========================
+
+HTML BLOCK ELEMENTS (Start on a new line and take full width)
+<div> - Generic block container.
+<p> - Paragraph text.
+<h1> to <h6> - Headings from largest to smallest.
+<section> - Groups related content.
+<article> - Independent content/article.
+<header> - Top section of a page or section.
+<footer> - Bottom section of a page or section.
+<nav> - Navigation links.
+<main> - Main content area.
+<aside> - Sidebar or related content.
+<ul> - Unordered (bullet) list.
+<ol> - Ordered (numbered) list.
+<li> - List item.
+<table> - Creates a table.
+<form> - Creates a form.
+
+HTML INLINE ELEMENTS (Stay in the same line)
+<span> - Generic inline container.
+<a> - Hyperlink.
+<strong> - Important/bold text.
+<em> - Emphasized/italic text.
+<b> - Bold text without importance.
+<i> - Italic text without emphasis.
+<u> - Underlined text.
+<mark> - Highlighted text.
+<small> - Smaller text.
+<sub> - Subscript text.
+<sup> - Superscript text.
+<img> - Displays an image.
+<label> - Label for form controls.
+
+SEMANTIC HTML ELEMENTS (Describe meaning of content)
+<header> - Introductory content.
+<nav> - Navigation menu.
+<main> - Primary page content.
+<section> - Thematic content section.
+<article> - Self-contained content.
+<aside> - Related or side content.
+<footer> - Footer information.
+<figure> - Media content container.
+<figcaption> - Caption for figure.
+<details> - Expandable content.
+<summary> - Heading for details element.
+
+TEXT FORMATTING TAGS
+<strong> - Important bold text.
+<em> - Important italic text.
+<b> - Bold text.
+<i> - Italic text.
+<u> - Underlined text.
+<mark> - Highlighted text.
+<small> - Smaller text.
+<del> - Deleted text.
+<ins> - Inserted text.
+<sub> - Subscript text.
+<sup> - Superscript text.
+<code> - Inline code.
+<pre> - Preformatted text.
+
+FORM ELEMENTS
+<form> - Form container.
+<input> - User input field.
+<textarea> - Multi-line text input.
+<select> - Dropdown list.
+<option> - Dropdown option.
+<button> - Clickable button.
+<label> - Input label.
+<fieldset> - Groups form controls.
+<legend> - Title for fieldset.
+<datalist> - Auto-suggestion list.
+<output> - Displays calculation result.
+
+COMMON INPUT TYPES
+text - Single line text.
+password - Hidden password input.
+email - Email address input.
+number - Numeric input.
+tel - Phone number input.
+date - Date picker.
+time - Time picker.
+datetime-local - Date and time picker.
+radio - Single choice option.
+checkbox - Multiple choice option.
+file - File upload.
+color - Color picker.
+range - Slider input.
+search - Search field.
+url - Website URL input.
+submit - Submit form.
+reset - Reset form.
+hidden - Hidden value.
+
+========================
+CSS MEASUREMENT UNITS
+========================
+
+ABSOLUTE UNITS
+px - Pixels, fixed screen unit.
+cm - Centimeters.
+mm - Millimeters.
+in - Inches.
+pt - Points (1/72 inch).
+pc - Picas (12 points).
+
+RELATIVE UNITS
+% - Relative to parent element.
+em - Relative to current element font size.
+rem - Relative to root (html) font size.
+vw - 1% of viewport width.
+vh - 1% of viewport height.
+vmin - 1% of smaller viewport dimension.
+vmax - 1% of larger viewport dimension.
+ch - Width of "0" character.
+ex - Height of lowercase "x".
+
+FLEXIBLE UNITS
+fr - Fractional space unit used in CSS Grid.
+
+COMMON CSS VALUES
+auto - Browser calculates value automatically.
+inherit - Inherits value from parent.
+initial - Uses default browser value.
+unset - Resets inherited/non-inherited behavior.
+
+MOST USED IN REAL PROJECTS
+px - Fixed sizing.
+% - Responsive sizing.
+rem - Consistent scalable sizing.
+em - Relative component sizing.
+vw/vh - Full screen responsive layouts.
+fr - CSS Grid layouts.
+
+
+========POSITION=========
+fixed , relative, sticky , absolute
+top, left, right, bottom
+
+======Color Code Formate======
+RGB RGBA RRGGBB RRGGBBAA
