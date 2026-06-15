@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            gap: 12px;
+            grid-template-areas:
+                "header header header"
+                "aside main main"
+                "aside main main"
+                "footer footer footer";
+
+            grid-template-rows: 80px 1fr 1fr 80px;
+            grid-template-columns: 200px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: red;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: green;
+        }
+
+        main {
+            grid-area: main;
+            background-color: cyan;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Header</h1>
+    </header>
+    <aside>
+        <h1>aside</h1>
+    </aside>
+    <main>
+        <h1>main</h1>
+    </main>
+
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+
+</html>
