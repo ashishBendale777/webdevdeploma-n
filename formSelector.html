@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Selectors Demo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        form {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* -----------------------
+   PSEUDO ELEMENTS
+------------------------ */
+
+        /* Required mark */
+        .required::after {
+            content: " *";
+            color: red;
+        }
+
+        /* Placeholder */
+        input::placeholder,
+        textarea::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+
+        /* Before */
+        .section-title::before {
+            content: "📌 ";
+        }
+
+        /* After */
+        .section-title::after {
+            content: " ✔";
+            color: green;
+        }
+
+        /* Selection */
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+
+        /* File Button */
+        input[type="file"]::file-selector-button {
+            background: teal;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        /* -----------------------
+   PSEUDO CLASSES
+------------------------ */
+
+        /* Focus */
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: blue;
+            box-shadow: 0 0 5px blue;
+            outline: none;
+        }
+
+        /* Required */
+        input:required {
+            border-left: 4px solid red;
+        }
+
+        /* Valid */
+        input:valid {
+            background: #e9ffe9;
+        }
+
+        /* Invalid */
+        input:invalid {
+            background: #fff0f0;
+        }
+
+        /* Disabled */
+        input:disabled {
+            background: #ddd;
+            cursor: not-allowed;
+        }
+
+        /* Checked */
+        input[type="checkbox"]:checked+label,
+        input[type="radio"]:checked+label {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Hover */
+        button:hover {
+            background: navy;
+        }
+
+        /* Active */
+        button:active {
+            transform: scale(.98);
+        }
+
+        /* First Child */
+        .form-group:first-child {
+            border-top: 4px solid green;
+        }
+
+        /* Last Child */
+        .form-group:last-child {
+            border-bottom: 4px solid orange;
+        }
+
+        /* nth-child */
+        .form-group:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .form-group {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Empty */
+        .empty-box:empty {
+            border: 2px dashed red;
+            height: 40px;
+        }
+
+        /* Readonly */
+        input:read-only {
+            background: #ffffcc;
+        }
+
+        /* Optional */
+        input:optional {
+            border-right: 4px solid dodgerblue;
+        }
+
+        /* Target Example */
+        #target-section:target {
+            background: yellow;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #ccc;
+        }
+
+        button {
+            background: teal;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#target-section">Highlight Target Section</a>
+
+    <form>
+
+        <h2>HTML Form + CSS Selectors Demo</h2>
+
+        <div class="form-group">
+            <label class="required">Text</label>
+            <input type="text" placeholder="Enter name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="abc@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password">
+        </div>
+
+        <div class="form-group">
+            <label>Number</label>
+            <input type="number" min="1" max="100">
+        </div>
+
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Time</label>
+            <input type="time">
+        </div>
+
+        <div class="form-group">
+            <label>Color</label>
+            <input type="color">
+        </div>
+
+        <div class="form-group">
+            <label>Range</label>
+            <input type="range">
+        </div>
+
+        <div class="form-group">
+            <label>URL</label>
+            <input type="url" placeholder="https://example.com">
+        </div>
+
+        <div class="form-group">
+            <label>Search</label>
+            <input type="search" placeholder="Search here">
+        </div>
+
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="tel">
+        </div>
+
+        <div class="form-group">
+            <label>File Upload</label>
+            <input type="file">
+        </div>
+
+        <div class="form-group">
+            <label>Select Country</label>
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Textarea</label>
+            <textarea placeholder="Write message"></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="chk">
+            <label for="chk">Accept Terms</label>
+        </div>
+
+        <div class="form-group">
+            <input type="radio" name="gender`" id="m">
+            <label for="m">Male</label>
+
+            <input type="radio" name="gender" id="f">
+            <label for="f">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label>Readonly Field</label>
+            <input type="text" value="Readonly Value" readonly>
+        </div>
+
+        <div class="form-group">
+            <label>Disabled Field</label>
+            <input type="text" disabled value="Disabled">
+        </div>
+
+        <div class="form-group">
+            <h3 class="section-title">Pseudo Elements Demo</h3>
+        </div>
+
+        <div id="target-section" class="form-group">
+            Target section using :target selector
+        </div>
+
+        <div class="empty-box"></div>
+
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
