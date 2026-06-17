@@ -142,3 +142,23 @@ top, left, right, bottom
 
 ======Color Code Formate======
 RGB RGBA RRGGBB RRGGBBAA
+
+
+=============================================================
+Quick Notes
+Function	    Description
+translate(x,y)	Move element horizontally and vertically
+translateX()	Move left/right
+translateY()	Move up/down
+scale()	        Increase/decrease size
+scaleX()	Stretch width
+scaleY()	Stretch height
+rotate()	Rotate in 2D
+rotateX()	Rotate on X-axis
+rotateY()	Rotate on Y-axis
+skew()	Tilt element
+skewX()	Tilt horizontally
+skewY()	Tilt vertically
+transition	Smooth hover effect
+@keyframes	Define animation steps
+animation	Run animation automatically
