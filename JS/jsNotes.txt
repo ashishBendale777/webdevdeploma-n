@@ -1,0 +1,13 @@
+Variables==
+js Datatypes 
+    1. primitive ==> Number . String, Float, Boolean
+    2. object ==> array, object, function
+
+Operators=
+    1. unary ===> have single opearands
+        ++ , --
+    2. binary ===> opearators must have 2 opearands
+        1. arithmetic + - * / %
+        2. assiggnmetns = += -= *= /= %=
+        3. logical || && !
+        4. relational > >= < <= == !=
