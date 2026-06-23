@@ -11,3 +11,16 @@ Operators=
         2. assiggnmetns = += -= *= /= %=
         3. logical || && !
         4. relational > >= < <= == !=
+
+        =====================================
+
+        if ...else if....else
+        marks= 34.54
+
+        grades ===
+            A+ => 90 +
+            A  => 75 to 90
+            B  => 60 to 75
+            C  => 50 to 60
+            D  => 35 to 50
+            E  => FAIL
