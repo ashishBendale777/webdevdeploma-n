@@ -30,3 +30,10 @@ Operators=
 1 print odds nums between 20 - 50
 2 count nums divisible by 4, 7, 12 nums between 50-150
 3 give me sum of 6 and 8 divisible nums between 200-400
+
+
+============================
+
+take one sentence string and make last word's first letter
+capital
+let sentence ="I am an indian"
